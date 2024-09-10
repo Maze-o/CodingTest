@@ -20,7 +20,7 @@ class Solution {
         Arrays.sort(lost); // 잃어버린 사람 배열 오름차순으로 정렬 
         
         
-        // 여벌을 챙겨온 사람이 도난당한 상황
+        // 여벌을 챙겨온 사람이 도난당한 상황 or 본인이 본인에게 빌려준 상황
         for (int i = 0; i < lost.length; i++) {
             for (int j = 0; j < reserve.length; j++) { 
                 if (lost[i] == reserve[j]) { // 빌려준 사람이랑 잃어버린 사람의 배열이 같으면 본인에게 빌려준 것으로 간주하고
